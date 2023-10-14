@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sabor Brasileiro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="img/brasil.png">
+</head>
+<body>
+  <div class="container">
+    <h1>Sabor Brasileiro</h1>
+    <div class="content">
+      <div class="form-reserva">
+        <h2>Realizar Reserva</h2>
+          <input type="text" name="nome" placeholder="Nome" id="nome">
+          <input type="number" name="cpf" placeholder="Número do CPF" id="cpf" >
+          <input type="email" name="email" placeholder="E-mail" id="email">
+          <input type="number" name="pessoas" placeholder="Número de pessoas" id="numero">
+          <input type="date" name="data" placeholder="Data" id="data">    
+          <input type="time" name="horario" placeholder="Horário" id="horario">
+          <select name="mesa" id="mesa" title="Escolha a mesa">
+            <option value="1"> Mesa 1 ➡ Redonda </option>
+            <option value="2"> Mesa 2 ➡ Quadrada </option>
+            <option value="3"> Mesa 3 ➡ retangular </option>
+            <option value="4"> Mesa 4 ➡ Redonda </option>
+            <option value="5"> Mesa 5 ➡ Quadrada </option>
+            <option value="6"> Mesa 6 ➡ retangular </option>
+            <option value="7"> Mesa 7 ➡ retangular </option>
+          </select>          
+          <button type="submit" onclick="realizarReserva()">Realizar Reserva</button>
+      </div>
+      <div class="form-verificar">
+        <h2>Verificar Reserva</h2>
+          <input type="number" name="cpfcheck" placeholder="Número do CPF" id="cpfcheck">
+          <button type="submit" onclick="verificarReserva()">Verificar</button>
+          <p id="print"></p>
+      </div>
+      <div class="form-cancelar">
+        <h2>Cancelar Reserva</h2>
+          <input type="number" name="cpfcan" placeholder="Número do CPF" id="cpfcan">
+          <input type="text" name="motivo" placeholder="Motivo cancelamento" id="motivo">
+          <button type="submit" onclick="cancelarReserva()">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
+
